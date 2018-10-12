@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    Date & time
+
+<form action="/datetime_a_to_z/period_between_dates/" method="post">
+    {% csrf_token %}
+    <label for="your_name">From Date: </label>
+    <input id="fromDate" type="text" name="fromDate" />
+     <label for="your_name">From Date: </label>
+    <input id="toDate" type="text" name="toDate" />
+    <input type="submit" value="OK">
+</form>
+</body>
+</html>

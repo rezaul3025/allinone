@@ -18,5 +18,6 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('doctor/',include('doctordir.urls'))
+    path('doctor/',include('doctordir.urls')),
+    path('datetime_a_to_z/',include('datetimeatoz.urls'))
 ]
