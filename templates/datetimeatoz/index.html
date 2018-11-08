@@ -10,10 +10,11 @@
 <form action="/datetime_a_to_z/period_between_dates/" method="post">
     {% csrf_token %}
     <label for="your_name">From Date: </label>
-    <input id="fromDate" type="text" name="fromDate" />
+    <input id="fromDate" type="text" name="fromDate" required/>
      <label for="your_name">From Date: </label>
-    <input id="toDate" type="text" name="toDate" />
+    <input id="toDate" type="text" name="toDate" required/>
     <input type="submit" value="OK">
+    {{ form }}
 </form>
 </body>
 </html>

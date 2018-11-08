@@ -13,10 +13,10 @@ class DateTimeViews:
         return render(request, 'datetimeatoz/index.html')
 
     def get_period_between_date_inputs(request):
-        if request.method == 'post':
+        if request.method == 'POST':
             form = PeriodBetweenDatesForm(request.POST)
             if form.is_valid():
-                return render(request, 'datetimeatoz/index.html', {'form': form})
+                return render(request, 'datetimeatoz/index.html', {'form': request.POST})
             else:
-                return HttpResponseRedirect('/')
+                return HttpResponseRedirect('/datetime_a_to_z/')
 
